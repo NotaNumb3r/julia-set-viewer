@@ -3,6 +3,9 @@ This is a basic [Julia set](https://en.wikipedia.org/wiki/Julia_set) fractal vie
 As it's designed sloppy (made from scratch), It's mostly a study program and I wont develop it further more.
 It uses [escape time algorithm](https://en.wikipedia.org/wiki/Mandelbrot_set#Escape_time_algorithm) to compute colors.
 
+### Author:
+Bruno K.
+
 ### Screenshot
 ![](https://github.com/NotaNumb3r/julia-set-viewer/blob/master/screenshots/JuliaSetViewer.jpg)
 
