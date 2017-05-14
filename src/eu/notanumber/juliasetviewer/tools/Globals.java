@@ -60,18 +60,19 @@ public class Globals {
     /*
     gray color ramp declaration
      */
-    private static final ColorRange grayRampInvert = new ColorRange(new LinkedHashMap<Double, Color>() {
+    private static final ColorRange warmRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
-            put(0.0, Color.WHITE);
-            put(0.2, new Color(0xcccccc));
-            put(0.7, new Color(0x909090));
-            put(1.0, Color.BLACK);
+            put(0.0, Color.BLACK);
+            put(0.1, new Color(0xe24900));
+            put(0.4, new Color(0xffcc25));            
+            put(0.9, new Color(0xffa625));
+            put(1.0, new Color(0xffca7c));
         }
-    }, "gray color ramp 2");
+    }, "warm color ramp 1");
     /*
     warm color ramp declaration
      */
-    private static final ColorRange warmRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
+    private static final ColorRange warmRamp2 = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
             put(0.0, Color.BLACK);
             put(0.1, new Color(0x5f0279));
@@ -79,53 +80,42 @@ public class Globals {
             put(0.7, new Color(0xffb300));
             put(1.0, Color.WHITE);
         }
-    }, "warm color ramp");
+    }, "warm color ramp 2");
     /*
     warm color ramp declaration
      */
-    private static final ColorRange warmRampInvert = new ColorRange(new LinkedHashMap<Double, Color>() {
+    private static final ColorRange coolRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
-            put(0.0, Color.WHITE);
-            put(0.1, new Color(0xffb300));
-            put(0.4, new Color(0xff2300));
-            put(0.7, new Color(0x5f0279));
-            put(1.0, Color.BLACK);
+            put(0.0, Color.BLACK);
+            put(0.1, new Color(0x2828d6));
+            put(0.4, new Color(0x00bb6b));
+            put(0.7, new Color(0xff970b));            
+            put(0.8, new Color(0xffbf68));
+            put(1.0, Color.WHITE);
         }
-    }, "warm color ramp 2");
+    }, "cool color ramp");
     /*
     cold color ramp declaration
      */
     private static final ColorRange coldRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
             put(0.0, Color.BLACK);
-            put(0.1, new Color(0x090980));
-            put(0.4, new Color(0x055898));
-            put(0.7, new Color(0x00da7c));
+            put(0.1, new Color(0x220b8d));
+            put(0.4, new Color(0x1c5fd1));
+            put(0.8, new Color(0x09ccb1));
             put(1.0, Color.WHITE);
         }
     }, "cold color ramp");
-    /*
-    cold color ramp declaration
-     */
-    private static final ColorRange coldRampInvert = new ColorRange(new LinkedHashMap<Double, Color>() {
-        {
-            put(0.0, Color.WHITE);
-            put(0.1, new Color(0x00da7c));
-            put(0.4, new Color(0x055898));
-            put(0.7, new Color(0x090980));
-            put(1.0, Color.BLACK);
-        }
-    }, "cold color ramp 2");
+    
     /*
     static ColorRange list declaration
      */
     public static List<ColorRange> colors = new ArrayList<>(Arrays.asList(
             grayRamp,
-            grayRampInvert,
             warmRamp,
-            warmRampInvert,
-            coldRamp,
-            coldRampInvert
+            warmRamp2,
+            coolRamp,
+            coldRamp
     ));
 
     private static JuliaSet jSet;       // current Julia Set    
