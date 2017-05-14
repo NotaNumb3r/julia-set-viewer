@@ -16,5 +16,5 @@ Bruno K.
 - zoom and offset
 - 3 output curve adjustments
 - several predefined color ranges
-### Licence
+### License
 - MIT
