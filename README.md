@@ -1,6 +1,6 @@
 # julia-set-viewer
 This is a basic [Julia set](https://en.wikipedia.org/wiki/Julia_set) fractal viewer.
-As it's designed sloppy (made from scratch), It's mostly a study program and I wont develop it further.
+As it's designed sloppy (made from scratch), It's mostly a study program and I wont develop it further more.
 It uses [escape time algorithm](https://en.wikipedia.org/wiki/Mandelbrot_set#Escape_time_algorithm) to compute colors.
 
 ### Screenshot
