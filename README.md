@@ -7,7 +7,7 @@ It uses [escape time algorithm](https://en.wikipedia.org/wiki/Mandelbrot_set#Esc
 Bruno K.
 
 ### Langage
-java
+java swing
 
 ### Screenshot
 ![](https://github.com/NotaNumb3r/julia-set-viewer/blob/master/screenshots/JuliaSetViewer.jpg)
