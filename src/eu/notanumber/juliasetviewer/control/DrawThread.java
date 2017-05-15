@@ -177,10 +177,11 @@ public class DrawThread extends Thread {
         double realY;
         double result;
 
+        double ratio = (double)width/(double)height;
         for (int i = 0; i < width && onCalc; i += pixelSize) {
             for (int j = 0; j < height && onCalc; j += pixelSize) {
                 realX = 2 * zoomLimit * i / (width - 1) - zoomLimit + currentSet.getOffsetX();
-                realY = 2 * zoomLimit * j / (height - 1) - zoomLimit + currentSet.getOffsetY();
+                realY = 2 * zoomLimit * j / (height - 1)/ratio - zoomLimit/ratio + currentSet.getOffsetY();
                 result = escapeCalc(realX, realY);
                 result = correctResult(result);
                 Color color = range.getColorAt(outputCurve(result));    //calculate color output, add curve correction 
@@ -200,7 +201,7 @@ public class DrawThread extends Thread {
                         // calculate real X based on x screen coordinates, zoom factor and offset
                         realX = 2 * zoomLimit * i / (width - 1) - zoomLimit + currentSet.getOffsetX();
                         // calculate real Y based on y screen coordinates, zoom factor and offset
-                        realY = 2 * zoomLimit * j / (height - 1) - zoomLimit + currentSet.getOffsetY();
+                        realY = 2 * zoomLimit * j / (height - 1)/ratio - zoomLimit/ratio + currentSet.getOffsetY();
                         result = escapeCalc(realX, realY);   //call escapeCalc method to calculate escape time
                         result = correctResult(result);
                         Color color = range.getColorAt(outputCurve(result));    //calculate color output, add curve correction 

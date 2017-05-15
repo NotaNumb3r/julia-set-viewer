@@ -82,9 +82,10 @@ public class MainFrame extends javax.swing.JFrame {
             ctrlPanel.setAutoscrolls(true);
             this.add(scrollPane);
             ctrlPanel.updateJuliaSetBoundary();
-            juliaCalculator.startDrawing();
+            
             this.pack();
             this.setResizable(false);
+            juliaCalculator.startDrawing();
         }
 
     }

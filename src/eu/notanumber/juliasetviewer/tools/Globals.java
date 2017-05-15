@@ -63,10 +63,10 @@ public class Globals {
     private static final ColorRange warmRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
             put(0.0, Color.BLACK);
-            put(0.1, new Color(0xe24900));
-            put(0.4, new Color(0xffcc25));            
-            put(0.9, new Color(0xffa625));
-            put(1.0, new Color(0xffca7c));
+            put(0.1, new Color(0x7f0048));
+            put(0.4, new Color(0xf08228));            
+            put(0.7, new Color(0xf02828));
+            put(1.0, new Color(0xffffff));
         }
     }, "warm color ramp 1");
     /*
@@ -87,10 +87,10 @@ public class Globals {
     private static final ColorRange coolRamp = new ColorRange(new LinkedHashMap<Double, Color>() {
         {
             put(0.0, Color.BLACK);
-            put(0.1, new Color(0x2828d6));
-            put(0.4, new Color(0x00bb6b));
-            put(0.7, new Color(0xff970b));            
-            put(0.8, new Color(0xffbf68));
+            put(0.1, new Color(0x1e7074));
+            put(0.4, new Color(0x46af4d));
+            put(0.7, new Color(0xffc08a));            
+            put(0.8, new Color(0xffd6d5));
             put(1.0, Color.WHITE);
         }
     }, "cool color ramp");
